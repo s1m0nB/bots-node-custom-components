@@ -11,7 +11,7 @@ module.exports = {
     }),
 
     invoke: (conversation, done) => {
-        // Parse a number out of the incoming message
+        // Get query from the incoming message
         const text = conversation.text();
         var query = conversation.properties().query;
         conversation.logger().info('Query '+query );
